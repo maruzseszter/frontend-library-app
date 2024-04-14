@@ -1,0 +1,10 @@
+<div class="kolcsonzok-lista">
+    <h2>Kölcsönzők</h2>
+    <ul>
+      <li *ngFor="let kolcsonzo of kolcsonzok">
+        {{ kolcsonzo.nev }} ({{ kolcsonzo.szulIdo | date: 'yyyy-MM-dd' }})
+        <button (click)="openKolcsonzesek(kolcsonzo.id)">Kölcsönzések</button>
+      </li>
+    </ul>
+  </div>
+  
